@@ -1,12 +1,13 @@
 const configureStore = require('@reduxjs/toolkit').configureStore;
-const cakeReducer = require('./features/cake/cakeSlice');
+const cakeReducer = require('../features/cake/cakeSlice');
+const iceCreamReducer = require('../features/icecream/iceCreamSlice');
 
 const store = configureStore({
     reducer: {
         cake: cakeReducer,
-        // iceCream: iceCreamReducer,
+        iceCream: iceCreamReducer,
         // user: userReducer
     }
 })
 
-coreModule.exports = store;
+module.exports = store;

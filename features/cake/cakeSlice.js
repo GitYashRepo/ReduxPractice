@@ -1,10 +1,10 @@
-const createSlice = require('@reduxjs/toolkit').createSlice;
+const { createSlice } = require('@reduxjs/toolkit');
 
 const initialState = {
     numOfCakes: 10,
 }
 
-const createSlice = createSlice({
+const cakeSlice = createSlice({
       name: 'cake',
       initialState,
       reducers: {
@@ -18,5 +18,5 @@ const createSlice = createSlice({
 });
 
 
-module.exports = createSlice.reducers
-module.exports.cakeActions = createSlice.actions
+module.exports = cakeSlice.reducer;
+module.exports.cakeActions = cakeSlice.actions;
